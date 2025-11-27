@@ -4,10 +4,10 @@
 }
 
 .App-header {
-  background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+  background: linear-gradient(135deg, #20c7b7, #d2f6ef);
   padding: 0;
   color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(15,52,96,0.12);
 }
 
 .navbar {
@@ -45,7 +45,7 @@
 }
 
 .nav-links a:hover {
-  color: #ffe4e1;
+  color: #e9fbf8;
 }
 
 main {
@@ -60,7 +60,7 @@ main {
 }
 
 .hero {
-  background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+  background: linear-gradient(135deg, #e9fbf8, #d2f6ef);
   padding: 4rem 2rem;
   border-radius: 10px;
   margin-bottom: 3rem;
@@ -99,18 +99,19 @@ main {
 }
 
 .cta-btn {
-  background: #ff69b4;
+  background: #20c7b7;
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 1.1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .cta-btn:hover {
-  background: #ff1493;
+  background: #0fb9a6;
+  transform: translateY(-2px);
 }
 
 .features {
@@ -136,7 +137,7 @@ main {
 }
 
 .feature h3 {
-  color: #ff69b4;
+  color: #0fb9a6;
   margin-bottom: 1rem;
 }
 
@@ -190,7 +191,7 @@ main {
 
 /* Testimonials Section */
 .testimonials {
-  background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+  background: linear-gradient(135deg, #e9fbf8, #d2f6ef);
   padding: 3rem 2rem;
   margin: 3rem 0;
   border-radius: 10px;
@@ -232,13 +233,13 @@ main {
 }
 
 .testimonial cite {
-  color: #ff69b4;
+  color: #20c7b7;
   font-weight: bold;
 }
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+  background: linear-gradient(135deg, #20c7b7, #d2f6ef);
   padding: 3rem 2rem;
   border-radius: 10px;
   text-align: center;
@@ -293,14 +294,14 @@ main {
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 2px solid #ff69b4;
+  border: 2px solid #20c7b7;
 }
 
 .search-input {
   width: 100%;
   max-width: 500px;
   padding: 15px 20px;
-  border: 2px solid #ff69b4;
+  border: 2px solid #20c7b7;
   border-radius: 30px;
   font-size: 18px;
   outline: none;
@@ -310,8 +311,8 @@ main {
 }
 
 .search-input:focus {
-  border-color: #ff1493;
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  border-color: #0fb9a6;
+  box-shadow: 0 0 10px rgba(11,185,166,0.18);
   background: white;
   transform: scale(1.02);
 }
@@ -340,7 +341,7 @@ main {
 
 .filter-buttons button.active,
 .filter-buttons button:hover {
-  background: #ff69b4;
+  background: #20c7b7;
   color: white;
 }
 
@@ -377,7 +378,7 @@ main {
 .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff69b4;
+  color: #20c7b7;
   margin: 0 15px 15px;
 }
 
@@ -405,7 +406,7 @@ main {
 }
 
 .add-to-cart-btn {
-  background: #ff69b4;
+  background: #20c7b7;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -416,7 +417,7 @@ main {
 }
 
 .add-to-cart-btn:hover {
-  background: #ff1493;
+  background: #0aa08f;
 }
 
 /* Cart Page Styles */
@@ -491,7 +492,7 @@ main {
 }
 
 .checkout-btn {
-  background: #ff69b4;
+  background: #20c7b7;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -502,7 +503,7 @@ main {
 }
 
 .checkout-btn:hover {
-  background: #ff1493;
+  background: #0aa08f;
 }
 
 /* Payment Form Styles */
@@ -511,7 +512,7 @@ main {
   padding: 2rem;
   background: #f8f9fa;
   border-radius: 10px;
-  border: 2px solid #ff69b4;
+  border: 2px solid #20c7b7;
 }
 
 .payment-form-container h3 {
@@ -556,8 +557,8 @@ main {
 
 .form-group input:focus {
   outline: none;
-  border-color: #ff69b4;
-  box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+  border-color: #20c7b7;
+  box-shadow: 0 0 5px rgba(32, 199, 183, 0.3);
 }
 
 .form-group input.error {
@@ -633,7 +634,7 @@ main {
 }
 
 .about-section h3 {
-  color: #ff69b4;
+  color: #20c7b7;
   margin-bottom: 1rem;
 }
 
@@ -690,7 +691,7 @@ main {
 .login-btn {
   width: 100%;
   padding: 0.75rem;
-  background-color: #ff69b4;
+  background-color: #20c7b7;
   color: white;
   border: none;
   border-radius: 4px;
@@ -700,13 +701,13 @@ main {
 }
 
 .login-btn:hover {
-  background-color: #ff1493;
+  background-color: #0aa08f;
 }
 
 .toggle-btn {
   background: none;
   border: none;
-  color: #ff69b4;
+  color: #20c7b7;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -751,7 +752,7 @@ main {
 .register-btn {
   width: 100%;
   padding: 0.75rem;
-  background-color: #ff69b4;
+  background-color: #20c7b7;
   color: white;
   border: none;
   border-radius: 4px;
@@ -761,7 +762,7 @@ main {
 }
 
 .register-btn:hover {
-  background-color: #ff1493;
+  background-color: #0aa08f;
 }
 
 .login-link {
@@ -771,7 +772,7 @@ main {
 }
 
 .login-link a {
-  color: #ff69b4;
+  color: #20c7b7;
   text-decoration: none;
 }
 

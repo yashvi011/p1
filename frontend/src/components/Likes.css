@@ -1,26 +1,23 @@
 .likes-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
-  color: #333;
+  background: transparent;
+  color: #043a3a;
   font-family: 'Arial', sans-serif;
   padding: 20px;
 }
-
 .likes-page h2 {
-  color: #f39c12;
+  color: #007a86;
   font-size: 2.5em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.08);
   margin-bottom: 30px;
   text-align: center;
 }
-
 .likes-page p {
   text-align: center;
   font-size: 1.2em;
-  color: #666;
+  color: #376b6b;
   margin: 50px 0;
 }
-
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,70 +25,113 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .product-card {
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 14px rgba(3, 120, 120, 0.06);
   overflow: hidden;
-  transition: transform 0.3s ease;
-  border: 2px solid #ff69b4;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  border: 2px solid #89e6df;
 }
-
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(3, 120, 120, 0.12);
 }
-
+.product-card.is-liked {
+  border-color: #007a86;
+  background: linear-gradient(180deg, #fbffff, #f1fcfc);
+  box-shadow: 0 10px 30px rgba(0, 122, 134, 0.12);
+}
 .product-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .product-card h3 {
   margin: 15px;
   font-size: 1.2rem;
-  color: #333;
+  color: #033a3a;
 }
-
 .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff69b4;
+  color: #007a86;
   margin: 0 15px 5px;
 }
-
 .category {
   margin: 0 15px 15px;
-  color: #666;
+  color: #376b6b;
   font-size: 0.9rem;
 }
-
 .product-actions {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  background: #f9f9f9;
+  background: #f6fdfd;
 }
-
 .like-btn,
 .add-to-cart-btn {
   padding: 8px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: all 0.22s ease;
 }
-
 .like-btn {
-  background: #e74c3c;
-  color: white;
+  background: transparent;
+  color: #006e75;
+  border: 2px solid #9fece8;
+}
+.like-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(3, 120, 120, 0.06);
+}
+.like-btn.liked {
+  background: #007a86;
+  color: #fff;
+  border-color: #007a86;
+  box-shadow: 0 8px 18px rgba(0, 122, 134, 0.16);
+  animation: pulse 0.6s ease;
+}
+.add-to-cart-btn {
+  background: #0b7285;
+  color: #fff;
+  font-weight: 700;
+}
+.add-to-cart-btn:hover {
+  background: #095e68;
+  transform: translateY(-2px);
 }
 
-.like-btn:hover {
-  background: #c0392b;
-  transform: translateY(-1px);
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .likes-page {
+    padding: 10px;
+  }
+
+  .likes-page h2 {
+    font-size: 2em;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .product-card {
+    border-radius: 8px;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+}
 }
 
 .like-btn.liked {

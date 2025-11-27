@@ -11,7 +11,7 @@ function Likes({ likedProducts, onLike, onAddToCart, user }) {
         ) : (
           <div className="products-grid">
             {likedProducts.map(product => (
-              <div key={product.id} className="product-card">
+              <div key={product.id} className={`product-card ${likedProducts.some(p => p.id === product.id) ? 'is-liked' : ''}`}>
                 <img src={product.image} alt={product.name} className="product-image" />
                 <h3>{product.name}</h3>
                 <p className="price">${product.price}</p>

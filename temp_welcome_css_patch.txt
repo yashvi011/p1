@@ -1,0 +1,161 @@
+/* Patch for .welcome-container background */
+<<<<<<< SEARCH
+.welcome-container {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 50%, #f5f7fa 100%);
+  position: relative;
+}
+=======
+.welcome-container {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+>>>>>>> REPLACE
+
+/* Patch for .blob-1 background */
+<<<<<<< SEARCH
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #af7ac5, #b28dff); /* Purple shades */
+  top: 10%;
+  left: 10%;
+  animation: morphBlob 8s ease-in-out infinite;
+}
+=======
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  top: 10%;
+  left: 10%;
+  animation: morphBlob 8s ease-in-out infinite;
+}
+>>>>>>> REPLACE
+
+/* Patch for .blob-2 background */
+<<<<<<< SEARCH
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #af7ac5, #b28dff);
+  bottom: 10%;
+  right: 15%;
+  animation: morphBlob 10s ease-in-out infinite 2s;
+}
+=======
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: transparent;
+  bottom: 10%;
+  right: 15%;
+  animation: morphBlob 10s ease-in-out infinite 2s;
+}
+>>>>>>> REPLACE
+
+/* Patch for .blob-3 background */
+<<<<<<< SEARCH
+.blob-3 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #d74f91, #e63946); /* Razzmatazz shades */
+  top: 50%;
+  right: 10%;
+  animation: morphBlob 12s ease-in-out infinite 4s;
+}
+=======
+.blob-3 {
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  top: 50%;
+  right: 10%;
+  animation: morphBlob 12s ease-in-out infinite 4s;
+}
+>>>>>>> REPLACE
+
+/* Patch for .btn-primary shadows */
+<<<<<<< SEARCH
+.btn-primary {
+  background: linear-gradient(135deg, #20c7b7, #0fb9a6);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 20, 147, 0.6);
+}
+=======
+.btn-primary {
+  background: linear-gradient(135deg, #20c7b7, #0fb9a6);
+  color: white;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: none;
+}
+>>>>>>> REPLACE
+
+/* Patch for .btn-secondary shadows */
+<<<<<<< SEARCH
+.btn-secondary {
+  background: white;
+  color: #0fb9a6;
+  border: 2px solid #0fb9a6;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.1);
+}
+
+.btn-secondary:hover {
+  background: #e9fbf8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.2);
+}
+=======
+.btn-secondary {
+  background: white;
+  color: #0fb9a6;
+  border: 2px solid #0fb9a6;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background: #e9fbf8;
+  transform: translateY(-3px);
+  box-shadow: none;
+}
+>>>>>>> REPLACE
+
+/* Patch for .center-glow background and filter */
+<<<<<<< SEARCH
+.center-glow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 105, 180, 0.2), transparent);
+  border-radius: 50%;
+  animation: glow 3s ease-in-out infinite;
+  filter: blur(30px);
+}
+=======
+.center-glow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 50%;
+  animation: glow 3s ease-in-out infinite;
+  filter: none;
+}
